@@ -831,7 +831,7 @@ gdjs.Weather_32AppletCode.condition0IsTrue_0.val = false;
 {
 gdjs.Weather_32AppletCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsedTime(runtimeScene, 2, "loadwtr");
 }if (gdjs.Weather_32AppletCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.network.sendAsyncRequest("http://api.weatherapi.com/v1/current.json?key=10d67fcb04974889be6184511211507&q=" + gdjs.evtTools.common.getVariableString(runtimeScene.getVariables().get("ip")) + "&aqi=yes", "", "GET", "", runtimeScene.getVariables().get("weatherunparsed"), gdjs.VariablesContainer.badVariable);
+{gdjs.evtTools.network.sendAsyncRequest("http://api.weatherapi.com/v1/current.json?key=10d67fcb04974889be6184511211507&q=87507&aqi=yes", "", "GET", "", runtimeScene.getVariables().get("weatherunparsed"), gdjs.VariablesContainer.badVariable);
 }{gdjs.evtTools.network.jsonToVariableStructure(gdjs.evtTools.common.getVariableString(runtimeScene.getVariables().get("weatherunparsed")), runtimeScene.getVariables().get("weatherparsed"));
 }}
 
